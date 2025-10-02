@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+
+<nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="challenge.html">Challenge</a></li>
+            <li><a href="#">Recipe</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+
+<header>
+    <h1>Reserve Your Room</h1>
+    <h2>Our reservation policies</h2>
+</header>
+
+<section class="policies">
+    <ul>
+        <li>Check-in time after 3:00pm</li>
+        <li>Check-out time by 11:00am or charges are incurred</li>
+        <li>Breakfast and afternoon tea/snacks included in cost</li>
+        <li>Proof of COVID-19 Vaccination required. Upload image(s) below</li>
+        <li>50% deposit required at booking</li>
+        <li>Cancellations less than 72 hours ahead of check-in forfeit 50% of deposit</li>
+    </ul>
+</section>
+
+<section class="reserve">
+    <form method="post" name="reservation" data-netlify="true">
+
+        <div>
+            <label for="firstname">First Name:</label>
+            <input type="text" name ="firstname" id="firstname" placeholder="First Name" required>
+        </div>
+
+        <div>
+            <label for="lastname">Last Name:</label>
+            <input type="text" name ="lastname" id="lastname" placeholder="Last Name" required>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Email" required>
+        </div>
+
+        <div>
+            <label for="Phone">Phone</label>
+            <input type="text" name="phone" id="phone" placeholder="Phone" placeholder="Phone" required>
+        </div>
+
+        <div>
+            <label for="check-in date">Check-in Date</label>
+            <input type="text" name="check-in date" id="check-in date" placeholder="mm/dd/yyyy" required>
+        </div>
+
+        <div>
+            <label for="check-out date">Check-out Date</label>
+            <input type="text" name="check-out date" id="check-out date" placeholder="mm/dd/yyyy" required>
+        </div>
+
+        <div>
+            <label for="number of guest">Number of guests (4 is maximum)</label>
+            <input type="text" id="name" name="name" required minlength="1" maxlength="4" size="10" />
+        </div>
+
+        <div>
+            <label for="room type">Room Type</label>
+            <select name="options" id="options">
+                <option value="" selected disabled>Select a room type</option>
+                <option value="Single">Single</option>
+                <option value="Double">Double</option>
+                <option value="Queen">Queen</option>
+                <option value="King">King</option>
+                <option value="Suite">Suite</option>
+            </select>
+        </div>
+
+        <div>
+            <div>Ocean View (additional cost)</div>
+            <label for="view">Yes</label>
+            <input type="radio" name="view" id="view" value="yes" >
+
+            <label for="view">No</label>
+            <input type="radio" name="view" id="view" value="no">
+        </div>
+
+        <div>
+            <label for="any special request">Any Special Requests</label>
+            <textarea name="comments" id="comments" rows="4" cols="50"></textarea>
+        </div>
+
+        <div>
+            <label for="vaccine proof">Vaccine Proof:</label>
+            <button type="upload file">Upload File</button> No file chosen
+        </div>
+
+        <div>
+            <label for="agree to terms">I agree to all the terms.</label>
+            <input type="checkbox" name="agree to terms" id="agree to terms" required>
+        </div>
+
+        <div>
+            <label for="create a password">Create a password</label>
+            <input type="password" name="create a password" id="create a password" required>
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+
+        <div>
+            <button type="reset">Reset</button>
+        </div>
+
+
+    </form>
+</section>
+<footer>
+    <p>
+         &copy; 2025 Nova Inn<br>
+         Miami, FL<br>
+</footer>
+
+
+
+
+    </div>
+</body>
+</html>
