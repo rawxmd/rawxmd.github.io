@@ -3,9 +3,13 @@ html {
    line-height: 1.5rem;
 }
 
-h1, h2, h3 {
-    color: #4f0876;
+h1, 
+h2, 
+h3 {
+    color: rgb(120, 12, 40);
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline dotted rgb(110, 142, 89) 3px;
+    text-underline-offset: 4px;
 }
 
 h1 {
@@ -29,6 +33,22 @@ h3 {
     letter-spacing: .1rem;
 }
 
+h1::before {
+    content: "\1F940 ";
+    font-size: 2rem;
+}
+
+h2::before {
+    content: "\1F940 ";
+    font-size: 2rem;
+}
+
+h3::before {
+    content: "\1F940 ";
+    font-size: 2rem;
+}
+
+
 .site-intro {
     font-size: 1.25rem;
 }
@@ -40,21 +60,25 @@ h3 {
     letter-spacing: .1rem;
 }
 
+.signif-design li {
+    list-style-type: "\1F940 ";
+    text-indent: .5rem;
+}
+
 .site-intro {
     font-size: 1.25rem;
 }
 
-
 nav a:link {
-    color: #2e1a47;
+    color: #CAE0BC;
 }
 
 nav a:visited {
-    color: #696969;
+    color: #780C28;
 }
 
 nav a:hover {
-    color: #2a9df4;
+    color: #CAE0BC;
     text-decoration: underline;
 }
 
@@ -65,9 +89,3 @@ nav a:active {
 nav a:focus {
     color: #87a96b;
 }
-
-nav a:link { color: #2e1a47; }
-nav a:visited { color: #696969; }
-nav a:hover { color: #2a9df4; text-decoration: underline; }
-nav a:active { color: #bb1b47; }
-nav a:focus { color: #87a96b; }

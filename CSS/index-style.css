@@ -1,0 +1,108 @@
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.2rem;
+    color: #f9a01b;
+}
+
+h1 {
+    font-size: 2.5rem;;
+    text-align: center;
+    text-decoration: underline dotted rgb(253,185,39) 3px;
+    text-underline-offset: 4px;
+}
+h2,
+h3 {
+    color: rgb(253,185,39);
+    font-family: 'franklin gothic medium', 'arial narrow', arial, sans-serif;
+    text-decoration: underline dotted rgb(253,185,39) 3px;
+    text-underline-offset: 4px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: rgb(85,37,130);
+}
+
+h2 {
+    font-size: 2rem;;
+    text-decoration: none;
+    color: rgb(85,37,130);
+    text-align: left;
+}
+
+h2::before
+h2::after {
+    content: "\1F451 ";
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+nav li {
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+nav,
+header {
+    text-align: left;
+}
+
+nav a,
+.assignments a,
+footer a {
+    text-decoration: none;
+    color: rgb(85,37,130);
+}
+
+nav a:link,
+nav a:visited {
+    line-height: 1.5rem;
+}
+
+nav a:hover,
+nav a:active {
+    text-decoration: underline dotted rgb(85,37,130) 3px;
+    text-underline-offset: 4px;
+    color: rgb(253,185,39);
+}
+
+nav a:hover::before {
+    content: "\1F451 ";
+}
+
+header p {
+    font-size: 80%;
+}
+
+.assignments li {
+    list-style-type: none;
+}
+
+.assignments li::before {
+    content: "\1F451 ";
+    font-size: 1.6rem;
+}
+
+.assignments a:link,
+.assignments a:visited {
+    line-height: 1.6;
+}   
+
+.assignments a:hover,
+.assignments a:active {
+    text-decoration: underline wavy rgb(85,37,130) 3px;
+    text-underline-offset: 4px;
+}
+
+footer {
+    color: rgb(253,185,39);
+    line-height: 80%;
+    font-weight: 300;
+}
