@@ -1,0 +1,157 @@
+/*
+    font-family: 'Figtree', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+*/
+
+html {
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.20rem;
+    line-height: 125%;
+    color: #8C92AC;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+nav {
+    background-color: #AFEEEE;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    padding: 20px;
+    display: inline-block;
+    color: #8C92AC;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:link,
+nav a:visited {
+    
+}
+
+nav a:hover,
+nav a:active {
+    background-color: #ffffff;
+    color: #AFEEEE;
+    text-decoration: underline;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Figtree', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 6% 0;
+    text-align: center;
+    text-shadow: 3px 4px 3px #d2d2d2;
+}
+
+img {
+    float: left;
+    max-width: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 3px #ccc;
+    shape-outside: circle(50%);
+}
+
+header h2 {
+    margin-top: 8%;
+}
+
+.rate {
+    clear: both;
+    margin-top: 8%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.emoji::after {
+    content: "\1F60B ";
+}
+
+.details,
+.ingredients,
+.instructions,
+.nutrition {
+    width: 40%;
+    float: left;
+}
+
+.details,
+.instructions {
+    margin-right: 16%;
+    margin-left: 2%;
+}
+
+blockquote {
+    clear: both;
+    width: 290px;
+    height: 280px;
+    padding: 80px 20px 0 20px;
+    border-radius: 50%;
+    background-color: #cbf4f4;
+    outline: dotted 5px #8C92AC;
+    outline-offset: 8px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.2rem;
+    margin: 40px auto;
+}
+
+blockquote small {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+footer {
+    background-color: #AFEEEE;
+    color: #8C92AC;
+    padding: 2% 0;
+    margin-top: 10px;
+}
+
+footer a {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #8C92AC;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+.col1,
+.col2,
+.col3 {
+    display: block;
+    float: left;
+    width: 33%;
+}
+
+footer p {
+    clear: both;
+}
