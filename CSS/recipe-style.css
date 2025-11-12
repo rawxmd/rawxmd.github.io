@@ -72,7 +72,7 @@ img {
     margin-right: 10%;
     border-radius: 50%;
     box-shadow: 5px 5px 3px #ccc;
-    shape-outside: circle(50%);
+    shape-outside: circle(45%); 
 }
 
 header h2 {
@@ -154,4 +154,154 @@ footer ul {
 
 footer p {
     clear: both;
+}
+
+
+/* media queries go below */
+
+@media (max-width: 360px) {
+
+    html {
+        line-height: 135%;
+    }
+    
+    nav a {
+        padding: 5px;
+        letter-spacing: normal;
+        font-size: .9rem;
+    }
+
+    nav ul {
+        padding-left: 10px;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        text-shadow: none;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    img {
+        float: none;
+        max-width: 60%;
+        margin-left: 20%;
+    }
+
+    .rate {
+        font-size: 1rem;
+    }
+
+    .details,
+    .ingredients,
+    .instructions,
+    .nutrition {
+        width: 85%;
+        float: none;
+    } 
+
+    blockquote {
+        max-width: 85%;
+        max-height: 80%;
+    }
+
+    .col1,
+    .col2,
+    .col3 {
+        display: block;
+        float: none;
+        width: 85%;
+    }
+
+/*media query go ends*/
+    
+@media (max-width: 810px) {
+
+        html {
+            font-size: 1rem;
+        }
+
+        nav a { 
+            padding: 8px;
+            letter-spacing: normal;
+            font-size: 1rem;
+            color: #ffffff;
+        }
+
+        nav ul {
+            padding-left: 10px;
+            font-family: 'Special Gothic Condensed One', sans-serif;
+        }
+
+        main {
+            width: 100%;
+        }
+
+    h1 {
+        font-size: 1.5rem;
+        font-family: 'Yeseva One', serif;
+        text-shadow: none;
+        color: #a9a9a9;
+    }
+
+    h2 {
+        font-size: 1rem;
+        font-family: 'Yeseva One', serif;
+        text-decoration-line: underline;
+        text-underline-offset: 5px;
+        line-height: 85%;
+        color: #54bdd4;
+    }
+
+    img {
+        float: none;
+        max-width: 55%;
+        margin-left: 25%;
+    }
+
+    .rate {
+        font-size: 1rem;
+    }
+
+    .details,
+    .ingredients,
+    .instructions,
+    .nutrition {
+        width: 85%;
+        float: none;
+        color: #a9a9a9;
+        font-family: 'Special Gothic Condensed One', sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    } 
+
+    blockquote {
+        max-width: 85%;
+        max-height: 80%;
+        font-family: 'Special Gothic Condensed One', sans-serif;
+        font-size: 1.3rem;
+        font-weight: 300;
+        margin: 40px auto;
+        background-color: #b8f5f5;
+    }
+
+    blockquote small {
+        font-family: 'Parisienne', cursive;
+        font-size: 1.5rem;
+    }
+
+    .col1,
+    .col2,
+    .col3 {
+        display: block;
+        float: none;
+        width: 85%;
+        font-family: 'Special Gothic Condensed One', sans-serif;
+    }
 }
